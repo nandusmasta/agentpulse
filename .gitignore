@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Data
+*.db
+data/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# SvelteKit
+.svelte-kit/
+
+# Bun
+bun.lock
+
+# OS
+.DS_Store

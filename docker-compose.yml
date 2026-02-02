@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  collector:
+    build: ./packages/collector
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - agentpulse-data:/app/data
+    environment:
+      - DB_PATH=/app/data/agentpulse.db
+      - PORT=3000
+    restart: unless-stopped
+
+  dashboard:
+    build: ./packages/dashboard
+    ports:
+      - "${DASHBOARD_PORT:-5173}:5173"
+    environment:
+      - VITE_API_URL=http://collector:3000
+      - VITE_API_KEY=${AP_DEFAULT_API_KEY:-ap_dev_default}
+    depends_on:
+      - collector
+    restart: unless-stopped
+
+volumes:
+  agentpulse-data:
