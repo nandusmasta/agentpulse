@@ -88,3 +88,7 @@ Open [http://localhost:5173](http://localhost:5173) to see the dashboard with yo
 - [Self-Hosting Guide](self-hosting.md) — configuration and deployment options
 - [SDK Reference](sdk-reference.md) — full API documentation
 - [Examples](../examples/) — runnable code samples
+
+## Community
+
+Join our Discord for help and discussion: https://discord.gg/tdnP9NWURy

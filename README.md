@@ -98,6 +98,10 @@ SDK (Python) → Collector API → SQLite → Dashboard
 - [Examples](examples/)
 - [Contributing](CONTRIBUTING.md)
 
+## Community
+
+Join us on Discord: https://discord.gg/tdnP9NWURy
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup and guidelines.
