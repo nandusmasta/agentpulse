@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "agentpulse"
+name = "agentpulse-ai"
 version = "0.1.0"
 description = "Lightweight observability for AI agents — track costs, tokens, and traces"
 readme = "README.md"

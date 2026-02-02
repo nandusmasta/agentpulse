@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-pip install agentpulse
+pip install agentpulse-ai
 ```
 
 ## AgentPulse Client

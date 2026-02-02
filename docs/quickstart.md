@@ -3,7 +3,7 @@
 ## Install the SDK
 
 ```bash
-pip install agentpulse
+pip install agentpulse-ai
 ```
 
 For OpenAI auto-instrumentation:

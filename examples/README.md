@@ -5,7 +5,7 @@
 Install the SDK:
 
 ```bash
-pip install agentpulse
+pip install agentpulse-ai
 ```
 
 Start the collector and dashboard:

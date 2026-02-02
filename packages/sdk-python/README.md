@@ -5,7 +5,7 @@ Lightweight, framework-agnostic observability for AI agents. Track costs, tokens
 ## Install
 
 ```bash
-pip install agentpulse
+pip install agentpulse-ai
 ```
 
 ## Quick Start

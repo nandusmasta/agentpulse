@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/pypi/v/agentpulse)](https://pypi.org/project/agentpulse/)
+[![PyPI](https://img.shields.io/pypi/v/agentpulse)](https://pypi.org/project/agentpulse-ai/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
@@ -9,7 +9,7 @@ Lightweight, framework-agnostic observability for AI agents. Track costs, tokens
 ## Quick Start
 
 ```bash
-pip install agentpulse
+pip install agentpulse-ai
 ```
 
 ```python
