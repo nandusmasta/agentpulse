@@ -12,7 +12,7 @@ Data is stored in a SQLite database file.
 ## Docker Compose (Recommended)
 
 ```bash
-git clone https://github.com/your-org/agentpulse.git
+git clone https://github.com/nandusmasta/agentpulse.git
 cd agentpulse
 docker-compose up -d
 ```

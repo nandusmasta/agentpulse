@@ -23,7 +23,7 @@ pip install agentpulse[anthropic]
 The simplest way is with Docker Compose:
 
 ```bash
-git clone https://github.com/your-org/agentpulse.git
+git clone https://github.com/nandusmasta/agentpulse.git
 cd agentpulse
 docker-compose up -d
 ```

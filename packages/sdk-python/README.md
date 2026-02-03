@@ -29,4 +29,4 @@ ap.shutdown()
 
 ## Documentation
 
-See the [full documentation](https://github.com/your-org/agentpulse/tree/main/docs).
+See the [full documentation](https://github.com/nandusmasta/agentpulse/tree/main/docs).

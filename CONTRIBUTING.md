@@ -14,7 +14,7 @@ Thanks for your interest in contributing to AgentPulse.
 ### Clone and Install
 
 ```bash
-git clone https://github.com/your-org/agentpulse.git
+git clone https://github.com/nandusmasta/agentpulse.git
 cd agentpulse
 ```
 
