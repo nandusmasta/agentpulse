@@ -43,6 +43,13 @@ Traces, spans, token counts, and costs are sent to the collector and visible in 
 - **Async support** — works with both sync and async code
 - **Batch transport** — low-overhead background flushing
 
+## Screenshots
+
+<img width="1903" height="1079" alt="screenshot-overview" src="https://github.com/user-attachments/assets/2774d208-599a-4c85-aab4-3ed71fb0f040" />
+<img width="1312" height="711" alt="screenshot-trace" src="https://github.com/user-attachments/assets/acc4aebb-1cd4-4e91-aa95-7a515203df52" />
+<img width="1340" height="939" alt="screenshot-settings" src="https://github.com/user-attachments/assets/be06b0ce-d344-49ef-8bc5-e8448b7977e3" />
+
+
 ## Auto-Instrumentation
 
 Patch OpenAI or Anthropic clients to automatically capture every LLM call:
