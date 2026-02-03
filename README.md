@@ -1,16 +1,43 @@
-[![PyPI](https://img.shields.io/pypi/v/agentpulse)](https://pypi.org/project/agentpulse-ai/)
+[![PyPI](https://img.shields.io/pypi/v/agentpulse-ai)](https://pypi.org/project/agentpulse-ai/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/nandusmasta/agentpulse?quickstart=1)
 
 # AgentPulse
 
 Lightweight, framework-agnostic observability for AI agents. Track costs, tokens, traces, and latency across OpenAI, Anthropic, and any custom tooling — with a self-hostable dashboard.
 
-## Quick Start
+## 🚀 Try It Now
+
+### Option 1: One-Click Cloud Environment (Recommended for trying)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/nandusmasta/agentpulse?quickstart=1)
+
+Click the button above → wait ~2 minutes → dashboard opens automatically. No installation needed!
+
+### Option 2: One-Line Install (For local use)
 
 ```bash
-pip install agentpulse-ai
+curl -fsSL https://raw.githubusercontent.com/nandusmasta/agentpulse/main/install.sh | bash
 ```
+
+This installs everything and starts AgentPulse locally. Dashboard at `http://localhost:5173`.
+
+### Option 3: Manual Setup
+
+```bash
+# Install SDK
+pip install agentpulse-ai
+
+# Clone and run services
+git clone https://github.com/nandusmasta/agentpulse.git
+cd agentpulse
+docker-compose up -d
+```
+
+## Quick Start
+
+Once running, add observability to your agent with 3 lines:
 
 ```python
 from agentpulse import AgentPulse, trace, tool
@@ -32,13 +59,23 @@ ap.shutdown()
 
 Traces, spans, token counts, and costs are sent to the collector and visible in the dashboard.
 
+## Screenshots
+
+<p align="center">
+  <img src="assets/screenshot-overview.jpg" width="600" alt="Dashboard Overview">
+</p>
+
+<p align="center">
+  <img src="assets/screenshot-trace.jpg" width="600" alt="Trace Detail">
+</p>
+
 ## Features
 
 - **Decorator-based tracing** — `@trace` and `@tool` decorators with zero boilerplate
 - **Auto-patching for LLMs** — automatic instrumentation for OpenAI and Anthropic clients
 - **Cost tracking** — per-call and aggregate cost calculation for 9+ models
 - **Span tree visualization** — hierarchical trace view in the dashboard
-- **Self-hostable** — single `docker-compose up` with SQLite storage
+- **Self-hostable** — your data stays on your machine
 - **Zero dependencies** — the SDK uses only the Python standard library
 - **Async support** — works with both sync and async code
 - **Batch transport** — low-overhead background flushing
@@ -69,22 +106,6 @@ response = client.chat.completions.create(
 )
 ```
 
-## Self-Hosting
-
-Clone the repository and start the stack:
-
-```bash
-git clone https://github.com/your-org/agentpulse.git
-cd agentpulse
-docker-compose up -d
-```
-
-This starts:
-- **Collector** on port 3000 — ingests traces and spans
-- **Dashboard** on port 5173 — web UI for exploring traces and costs
-
-See [docs/self-hosting.md](docs/self-hosting.md) for configuration options.
-
 ## Architecture
 
 ```
@@ -105,9 +126,23 @@ SDK (Python) → Collector API → SQLite → Dashboard
 - [Examples](examples/)
 - [Contributing](CONTRIBUTING.md)
 
+## Why AgentPulse?
+
+| Problem | AgentPulse Solution |
+|---------|---------------------|
+| "My agent cost $400 last month, but which calls?" | Per-trace cost breakdown |
+| "Agent failed, no idea why" | Full span tree with inputs/outputs |
+| "LangSmith requires LangChain" | Framework-agnostic, works with anything |
+| "Don't want my data on someone's server" | Self-host with SQLite, data stays local |
+| "Existing tools are expensive" | Free & open source forever |
+
 ## Community
 
-Join us on Discord: https://discord.gg/tdnP9NWURy
+- **Discord**: [Join us](https://discord.gg/agentpulse)
+- **Issues**: [GitHub Issues](https://github.com/nandusmasta/agentpulse/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/nandusmasta/agentpulse/discussions)
+
+Need help? Open an issue — we respond quickly!
 
 ## Contributing
 
